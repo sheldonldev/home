@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap');
 
 :root {
-  --cl-light: #ffffff;
+  --cl-light: #f8f8f8;
   --cl-dominant: #4f203f;
   --cl-complementary: #4B470F;
   --cl-gray: #383838;
@@ -52,6 +52,7 @@ h2 {font-size: 1.8em}
 h3 {font-size: 1em; font-weight: 200}
 p {font-size: 1em; font-weight: 1em; margin: 0.2em; color: var(--cl-primary)}
 
+/* Navbar */
 header {
   background-color: var(--cl-primary);
   width: 100%;
@@ -95,6 +96,7 @@ header ul li a {
   }
 }
 
+/* Main */
 main {
   display: flex;
   flex-direction: column;
@@ -108,6 +110,7 @@ section {
   padding: 5em 0;
 }
 
+/* Welcome */
 #welcome-section {
   width: 100vw;
   height: 100vh;
@@ -115,19 +118,30 @@ section {
     linear-gradient(60deg, var(--cl-complementary) 0%, var(--cl-gray) 60%);
 }
 
+#doc-link, #doc-link i {
+  background: #00000000;
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+#doc-link:hover, #doc-link:hover i {
+  background: var(--cl-light);
+  color: #383838;
+}
+
 #doc-link i {
   transform: translateX(0);
-  transition: transform 0.3s ease-out, color 0.3s ease-out;
+  transition: transform 0.3s ease-out;
 }
 #doc-link:hover i {
   transform: translateX(0.25em);
 }
 
+/* Projects */
 #projects {
   background-color: var(--cl-dominant);
 }
 #projects h2 {
   margin-bottom: 1em;
+  border-bottom: 1px solid var(--cl-primary);
 }
 .projects-grid {
   margin: 2em auto;
@@ -154,6 +168,13 @@ section {
 }
 .project:hover {
   transform: scale(1.1);
+}
+.project i {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+.project:hover i {
+  transform: translateX(0.25em);
 }
 .project-image {
   border-radius: 5px 5px 0 0;
