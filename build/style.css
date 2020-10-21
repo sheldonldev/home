@@ -118,21 +118,22 @@ section {
     linear-gradient(60deg, var(--cl-complementary) 0%, var(--cl-gray) 60%);
 }
 
-#doc-link, #doc-link i {
+#doc-link {
   background: #00000000;
   transition: background 0.3s ease-out, color 0.3s ease-out;
 }
-#doc-link:hover, #doc-link:hover i {
+#doc-link:hover {
   background: var(--cl-light);
   color: #383838;
 }
 
 #doc-link i {
   transform: translateX(0);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, color 0.3s ease-out;
 }
 #doc-link:hover i {
   transform: translateX(0.25em);
+  color: #383838;
 }
 
 /* Projects */
