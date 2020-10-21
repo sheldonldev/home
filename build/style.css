@@ -113,7 +113,7 @@ section {
 /* Welcome */
 #welcome-section {
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   background-image:
     linear-gradient(60deg, var(--cl-complementary) 0%, var(--cl-gray) 60%);
 }
